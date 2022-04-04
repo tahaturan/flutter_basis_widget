@@ -2,7 +2,11 @@
 
 Flutter temel widget ve uygulamalar 
 
-#### Getting Started
+#### Sayac uygulamasi
 
-<img src="images/counterApp.gif" height="300">
+<img src="assets/images/counterApp.gif" height="300">
+
+#### image calismalari
+<img src="assets/images/imageornekleri.png" height="300">
+
 

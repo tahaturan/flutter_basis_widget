@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_temel_widget/view/my_counter_page.dart';
+import 'package:flutter_temel_widget/view/image_widgets.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,11 +14,22 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Material App',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primaryColor: Colors.blue,
+      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.blue,
+        textTheme: TextTheme(
+          headline2: TextStyle(
+            color: Colors.green.shade400,
+          ),
         ),
-        home: const MyCounterApp());
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Image Ornekleri"),
+        ),
+        body: ImageExample(),
+      ),
+    );
   }
 }
