@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_temel_widget/view/image_widgets.dart';
+import 'package:flutter_temel_widget/view/basic_buttons.dart';
 
 void main() => runApp(const MyApp());
 
@@ -26,9 +26,9 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Image Ornekleri"),
+          title: const Text("Buton Ornekleri"),
         ),
-        body: ImageExample(),
+        body: BasicButtons(),
       ),
     );
   }
