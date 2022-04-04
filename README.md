@@ -9,4 +9,6 @@ Flutter temel widget ve uygulamalar
 #### image calismalari
 <img src="assets/images/imageornekleri.png" height="300">
 
+#### IntrinsicHeight - FadeInImage- Placeholder kullanimi
+<img src="assets/images/IntrinsicHeight_FadeInImage_Placeholder.png" height="300">
 
