@@ -10,26 +10,42 @@ class DropDownButtonKullanimi extends StatefulWidget {
 
 class _DropDownButtonKullanimiState extends State<DropDownButtonKullanimi> {
   String? _secilenSehir; //? burayi null tanimladik
+  final List<String> _tumSehirler = [
+    "Ankara",
+    "Bursa",
+    "Istanbul",
+    "Aydin",
+    "Izmir",
+    "Erzurum"
+  ];
   @override
   Widget build(BuildContext context) {
     return Center(
       child: DropdownButton<String>(
-        hint: const Text(
-            "Sehir Seciniz"), //todo: yukarida secilen sehiri null tanimladik ve ekranda ilk olarak bu yazinin gorunmesini istiyoruz
-        items: const [
-          DropdownMenuItem(
-            child: Text("Ankara Sehri"),
-            value: "ankara",
-          ),
-          DropdownMenuItem(
-            child: Text("Bursa Sehri"),
-            value: "izmir",
-          ),
-          DropdownMenuItem(
-            child: Text("Aydin Sehri"),
-            value: "aydin",
-          ),
-        ],
+        hint: const Text("Sehir Seciniz"),
+        //todo: yukarida secilen sehiri null tanimladik ve ekranda ilk olarak bu yazinin gorunmesini istiyoruz
+        // items: const [
+        //   DropdownMenuItem(
+        //     child: Text("Ankara Sehri"),
+        //     value: "ankara",
+        //   ),
+        //   DropdownMenuItem(
+        //     child: Text("Bursa Sehri"),
+        //     value: "izmir",
+        //   ),
+        //   DropdownMenuItem(
+        //     child: Text("Aydin Sehri"),
+        //     value: "aydin",
+        //   ),
+        // ],
+        items: _tumSehirler
+            .map(
+              (String oankiSehir) => DropdownMenuItem(
+                child: Text(oankiSehir),
+                value: oankiSehir,
+              ),
+            )
+            .toList(),
         value: _secilenSehir,
         onChanged: (String? yeni) {
           //todo: secme islemlerimizi yaptigimiz yer
