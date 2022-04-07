@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_temel_widget/view/basic_buttons.dart';
+import 'package:flutter_temel_widget/view/drop_down_button.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text("Buton Ornekleri"),
         ),
-        body: BasicButtons(),
+        body: const DropDownButtonKullanimi(),
       ),
     );
   }
