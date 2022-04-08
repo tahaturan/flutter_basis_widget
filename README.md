@@ -12,11 +12,13 @@ Flutter temel widget ve uygulamalar
 <div>
 <img src="assets/images/IntrinsicHeight_FadeInImage_Placeholder.png" height="300" width =200>
 <img src="assets/images/loading_screen.gif" height="300" width =200>
- </div>
+</div>
 
 #### Buton Ornekleri
+<div>
 <img src="assets/images/butonornek.png" height="300">
 <img src="assets/images/dropdownButton.gif" height="300">
 <img src="assets/images/popupMenu.gif" height="300">
+</div>
 
 
