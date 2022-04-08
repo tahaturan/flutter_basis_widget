@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_temel_widget/view/drop_down_button.dart';
+import 'package:flutter_temel_widget/view/elevated_text_button.dart';
 import 'package:flutter_temel_widget/view/popup_menu.dart';
-import 'package:flutter_temel_widget/view/text_button_textfield.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,10 +27,10 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Text Button TextField Kullanimi"),
+          title: const Text("Elevated & Text Button Kullanimi"),
           actions: const [PopupMenuKullanimi()],
         ),
-        body: const TextButtonTextField(),
+        body: const ElevatedTextButton(),
       ),
     );
   }

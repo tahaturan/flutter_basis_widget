@@ -19,6 +19,7 @@ Flutter temel widget ve uygulamalar
 <img src="assets/images/butonornek.png" height="300">
 <img src="assets/images/dropdownButton.gif" height="300">
 <img src="assets/images/popupMenu.gif" height="300">
+<img src="assets/images/eledated-Text-Button.png" height="300">
 </div>
 
 #### Text Button TextField Kullanimi
