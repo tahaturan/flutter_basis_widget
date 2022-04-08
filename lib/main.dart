@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_temel_widget/view/drop_down_button.dart';
+import 'package:flutter_temel_widget/view/popup_menu.dart';
 
 void main() => runApp(const MyApp());
 
@@ -27,6 +28,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Buton Ornekleri"),
+          actions: const [PopupMenuKullanimi()],
         ),
         body: const DropDownButtonKullanimi(),
       ),
