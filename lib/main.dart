@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_temel_widget/view/elevated_text_button.dart';
 import 'package:flutter_temel_widget/view/popup_menu.dart';
+import 'package:flutter_temel_widget/view/text_button_textfield.dart';
 
 void main() => runApp(const MyApp());
 
@@ -30,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text("Elevated & Text Button Kullanimi"),
           actions: const [PopupMenuKullanimi()],
         ),
-        body: const ElevatedTextButton(),
+        body: const TextButtonTextField(),
       ),
     );
   }
