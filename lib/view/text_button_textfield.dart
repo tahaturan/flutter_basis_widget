@@ -34,8 +34,22 @@ class _TextButtonTextFieldState extends State<TextButtonTextField> {
               });
             },
             child: const Text("Veriyi Al"),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.amber,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              side: const BorderSide(color: Colors.red, width: 2),
+            ),
           ),
-          Text("Gelen Veri: $alinanVeri"),
+          Text(
+            "Gelen Veri: $alinanVeri",
+            style: const TextStyle(
+              color: Colors.green,
+              backgroundColor: Colors.red,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           //todo: Vermizi Ekranda gosteriyoruz
         ],
       ),
