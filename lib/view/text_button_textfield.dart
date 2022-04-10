@@ -18,11 +18,43 @@ class _TextButtonTextFieldState extends State<TextButtonTextField> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextField(
-            controller: textfieldController,
-            //todo: olustudumuz degiskeni burada tanimliyoruz bu sekilde verileri alabilicez
-            decoration: const InputDecoration(
-              hintText: "Yaziniz",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: textfieldController,
+              //todo: olustudumuz degiskeni burada tanimliyoruz bu sekilde verileri alabilicez
+              decoration: const InputDecoration(
+                hintText: "Yaziniz",
+                hintStyle: TextStyle(
+                  //todo: input icindeki yaziyi ozellestirdik
+                  color: Colors.blueAccent,
+                  fontSize: 20,
+                ),
+                labelText: "e-mail",
+                labelStyle: TextStyle(color: Colors.red, fontSize: 20),
+                filled: true,
+                //todo:arka plan rengini degistircegimiz icin true yaptik
+                fillColor: Colors.green,
+                //todo: arka plan rengini degistirdik
+                border: OutlineInputBorder(
+                    //todo:cerceve ekledik
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                icon: Icon(Icons.print), //todo: dis yan tarafina icon ekledik
+                prefixIcon: Icon(
+                  //todo: icine bir icon ekledik
+                  Icons.abc,
+                  color: Colors.white,
+                ),
+              ),
+              obscureText: true,
+              //todo: sifre girer gibi karakterleri gizler
+              keyboardType: TextInputType.datetime,
+              //todo: klavyenin acilis turunu belirtiriz
+              textAlign: TextAlign.center,
+              //todo: icindeki yaziyi hizalariz
+              maxLength: 10,
+              //todo: icerisine girilcek karakter sayisini belirleriz
+              style: const TextStyle(color: Colors.white),
             ),
           ),
           ElevatedButton(
