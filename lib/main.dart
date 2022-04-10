@@ -32,6 +32,15 @@ class _MyAppState extends State<MyApp> {
           actions: const [PopupMenuKullanimi()],
         ),
         body: const TextButtonTextField(),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            debugPrint("Fab 1 tiklandi");
+          },
+          child: const Icon(Icons.add_a_photo_outlined),
+          tooltip: "FAB Button", //todo:uzerine uzun basildiginda cikan yazi
+          backgroundColor: Colors.deepOrange,
+          foregroundColor: Colors.white,
+        ),
       ),
     );
   }
