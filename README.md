@@ -25,4 +25,6 @@ Flutter temel widget ve uygulamalar
 #### Text Button TextField Kullanimi
 <img src="assets/images/textfieldKullanimi.gif" height="300">
 
+#### Switch Button Kullanimi
+<img src="assets/images/switchButton.gif" height="300">
 
