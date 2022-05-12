@@ -28,3 +28,6 @@ Flutter temel widget ve uygulamalar
 #### Switch Button Kullanimi
 <img src="assets/images/switchButton.gif" height="300">
 
+#### Sayfalar Arasi Gecisler
+<img src="assets/images/sayfagecis.gif" height="300">
+

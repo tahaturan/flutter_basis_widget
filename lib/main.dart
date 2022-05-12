@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_temel_widget/view/anasayfa.dart';
 import 'package:flutter_temel_widget/view/elevated_text_button.dart';
 import 'package:flutter_temel_widget/view/popup_menu.dart';
 import 'package:flutter_temel_widget/view/switch_button_kullanimi.dart';
@@ -29,10 +30,10 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Switch Button Kullanimi"),
+          title: const Text("Sayfalar arasi gecisler"),
           actions: const [PopupMenuKullanimi()],
         ),
-        body: const SwitchButtonKullanimi(),
+        body: const AnaSayfa(),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             debugPrint("Fab 1 tiklandi");
