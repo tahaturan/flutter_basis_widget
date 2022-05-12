@@ -16,6 +16,12 @@ class _SwitchButtonKullanimiState extends State<SwitchButtonKullanimi> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Switch Button Kullanimi"),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.keyboard_double_arrow_left_rounded),
+        ),
       ),
       body: Center(
         child: Column(
