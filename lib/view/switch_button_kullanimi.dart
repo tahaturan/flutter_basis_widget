@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_temel_widget/kisiler.dart';
 import 'package:flutter_temel_widget/view/elevated_text_button.dart';
+import 'package:flutter_temel_widget/view/sayfalar_arasi_veri_transferi.dart';
 import 'package:flutter_temel_widget/widgets/buttons/sayfagecisbutton.dart';
 
 class SwitchButtonKullanimi extends StatefulWidget {
@@ -10,6 +12,7 @@ class SwitchButtonKullanimi extends StatefulWidget {
 }
 
 class _SwitchButtonKullanimiState extends State<SwitchButtonKullanimi> {
+  Kisiler kisi = Kisiler(isim: "Taha Turan", yas: 25, boy: 1.85, bekarMi: true);
   bool switchKontrol = false;
   @override
   Widget build(BuildContext context) {
@@ -52,7 +55,7 @@ class _SwitchButtonKullanimiState extends State<SwitchButtonKullanimi> {
               },
               child: const Text("Anlik Durum"),
             ),
-            GecisButton(sayfa: const ElevatedTextButton())
+            GecisButton(sayfa: SayfalarArasiVeriTransferi(kisi: kisi)),
           ],
         ),
       ),
